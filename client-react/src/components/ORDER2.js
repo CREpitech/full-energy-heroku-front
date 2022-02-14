@@ -18,6 +18,7 @@ function OrderNew(props) {
     // Toggle for Modal
     const toggle = () => setModal(!modal);
     const toggle2 = () => setModal2(!modal2);
+    //api responses
     const [resMessage, setResMessage] = useState();
     const [resTotal, setResTotal] = useState();
 
@@ -40,7 +41,7 @@ function OrderNew(props) {
     }
     async function onSubmit(e) {
         e.preventDefault();
-        const user_id = props.user._id;
+        const user_id = props.user.id;
         const cart_id = props.cart.cart._id;
         const user_address_1 = e.target.address_1.value;
         const phone = e.target.phone.value;
@@ -55,7 +56,7 @@ function OrderNew(props) {
             payment_method: payment_method,
         }
         await post_order(order)
-        /* console.log(order) */
+        
 
     }
     return (

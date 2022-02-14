@@ -69,6 +69,14 @@ export const login = ({email, password}) => dispatch => {
             });
         });
 }
+export const updateUser = (id, user) => (dispatch) => {
+    axios.put(`https://first-try-heroku-deployment.herokuapp.com/api/users/${id}`, user)
+        .then(res => dispatch({
+            type: UPDATE_USER,
+            payload: res.data
+        }))
+        .catch(err => dispatch(returnErrors(err.response.data, err.response.status)))
+}
 // logout user
 export const logout = () => {
     return {

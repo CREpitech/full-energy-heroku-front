@@ -8,6 +8,7 @@ import logoimage from '../images/fullEnergyLogo.png';
 import SearchModal from './SearchModal';
 import CartModal from './CartModal';
 import { Link } from 'react-router-dom'
+import Profile from './Profile'
 
 class AppNavbar extends Component {
     state = {
@@ -43,7 +44,7 @@ class AppNavbar extends Component {
 
                     <a className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 lg:mx-4 lg:my-0" href="#"> <Logout /></a>
                     {localStorage.getItem('is_admin') === 'true' ? <a className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 lg:mx-4 lg:my-0" href="/admin"> Admin</a> : <a className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 lg:mx-4 lg:my-0" ref="#">Enjoy!</a>}
-
+                    <a><Profile /></a>
                 </div>
 
             </Fragment>

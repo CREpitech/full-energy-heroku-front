@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+
   },
   "repository": {
     "type": "git",
@@ -15,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/CREpitech/full-energy-heroku-front/issues"
   },
-  "homepage": "https://github.com/CREpitech/full-energy-heroku-front#readme",
+  "homepage": "https://full-energy-heroku-front.herokuapp.com/",
   "dependencies": {
     "express": "^4.17.2"
   }

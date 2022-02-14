@@ -1,17 +1,15 @@
 import { React, useState } from 'react';
 import axios from 'axios';
-import { Form, Label, Input, Dropdown, DropdownMenu, DropdownItem, DropdownToggle } from 'reactstrap';
+import { Form, Label, Input } from 'reactstrap';
 import './Items.css'
 
 const BASE_URL = 'https://first-try-heroku-deployment.herokuapp.com/api';
-async function get_items() {
-    await axios.get(BASE_URL + "/items").then(res => console.log(res.data))
-}
+
 
 function AddItem() {
     const [categoriesArray, setCategoriesArray] = useState([]);
     const [providersArray, setProvidersArray] = useState([]);
-    const [catId, setCatId] = useState(null);
+   
     const [provId, setProvId] = useState(null);
 
     async function get_categories() {
@@ -66,7 +64,7 @@ function AddItem() {
             first_stock: first_stock,
             image_1: image_1,
             image_2: image_2,
-            image_2: image_2,
+            image_3: image_3,
             price: price,
             sell_price: sell_price,
             provider_id: provider_id,

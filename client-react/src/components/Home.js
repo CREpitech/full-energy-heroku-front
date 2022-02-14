@@ -9,7 +9,7 @@ import ItemModal from './ItemModal';
 import BannerOneProduct from './BannerOneProduct';
 import Footer from './Footer';
 import BestService from './BestService';
-import Featured from './Featured';
+
 import swal from 'sweetalert';
 
 

@@ -8,7 +8,6 @@ import Admin from './admin/Admin';
 import Shop from './Shop';
 import Profile from './Profile';
 import AddUser from './admin/usersCRUD/addUser';
-import ItemList from './admin/itemsCRUD/ItemListComponent';
 import ItemsCrud from './admin/itemsCRUD/ItemsCrudComponent';
 import UpdateItem from './admin/itemsCRUD/UpdateItemComponent';
 import UpdateProvider from './admin/providersCRUD/ProviderUpdate';

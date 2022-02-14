@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
-    Modal, ModalFooter,
-    ModalHeader, ModalBody, Label
+    Modal, ModalBody, Label
 } from "reactstrap"
-import { Form, Card, Input, CardText, CardBody, CardTitle, CardSubtitle, Button, Alert, Container } from 'reactstrap';
+import { Form,Input,Button, } from 'reactstrap';
 
 
 
@@ -94,14 +93,15 @@ function OrderNew(props) {
                             <Input required />
                             <button onClick={toggle2}><h3>Click here to,<br />Confirm Payment!</h3></button>
                         </Form>
-                        {resMessage, resTotal != null ?<Modal isOpen={modal2}
+                        {resMessage!= null && resTotal != null ?
+                        <Modal isOpen={modal2}
                             toggle={toggle2}
                             modalTransition={{ timeout: 1000 }}>
                             <ModalBody>
                                 <p>Thanks for you purchase! <br />Your order is the number: {resMessage}</p>
                                 <p>Your order total: € {resTotal}</p>
                             </ModalBody>
-                        </Modal> : <h1></h1>}
+                        </Modal> : <h1>Empty</h1>}
                     </ModalBody>
                 </Modal>
             </div >

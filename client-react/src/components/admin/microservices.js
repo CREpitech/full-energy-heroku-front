@@ -43,7 +43,7 @@ function Microservices() {
                 setOrderLength(len)
                 const orders = data.orders;
                 for (var i = 0; i< orders.length; i ++){
-                    var order = orders[i];
+                    
                     var subtotal = orders[i].total * i
                                        
                 }

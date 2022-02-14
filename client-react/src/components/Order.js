@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios';
 import AppNavbar from './AppNavbar';
-import { withRouter, Redirect, Link } from 'react-router-dom';
+import { withRouter} from 'react-router-dom';
 import './admin/itemsCRUD/Items.css'
 
 const BASE_URL = "https://first-try-heroku-deployment.herokuapp.com/api"

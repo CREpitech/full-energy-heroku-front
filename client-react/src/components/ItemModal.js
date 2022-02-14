@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import {
-    Card, CardText, CardBody, CardTitle, CardSubtitle, Button,
+    Button,
     Modal,
     ModalHeader,
     ModalBody

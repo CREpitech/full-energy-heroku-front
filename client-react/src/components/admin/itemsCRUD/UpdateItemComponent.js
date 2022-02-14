@@ -1,6 +1,6 @@
 import { React, useState } from 'react'
 import axios from 'axios';
-import { Form, FormGroup, FormText, Col, Input, Label } from 'reactstrap'
+import { Form, FormGroup,  Col, Input, Label } from 'reactstrap'
 import { withRouter, Redirect, Link } from 'react-router-dom'
 
 
@@ -86,7 +86,7 @@ function UpdateItem(props) {
         }
         if(item){
             update_item(item);
-        }else {throw new Error}
+        }else {throw new Error()}
         //update_user(id, user);
         console.log("onSubmit: ", item);
     }

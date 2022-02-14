@@ -1,7 +1,6 @@
 import { React, useState } from 'react';
 import axios from 'axios';
-import { List, Card, CardBody, CardTitle, CardSubtitle, CardText, Button, Accordion, AccordionBody, AccordionItem, AccordionHeader } from 'reactstrap'
-import { Collapse, CardHeader } from 'reactstrap';
+
 import { Link } from 'react-router-dom';
 import './Items.css'
 import trash from './trash.png'
@@ -66,7 +65,7 @@ function ItemList() {
                             </td>
                             <td>
 
-                                <img id="imge" src={image_1} height="30%" width="30%"></img>
+                                <img id="imge" src={image_1} height="30%" width="30%" alt="basic"></img>
                             </td>
                             <td>
                             

@@ -1,22 +1,21 @@
-import { Component, Fragment, useState } from 'react';
+import {useState } from 'react';
 
 import AppNavbar from '../AppNavbar';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+
 import UsersCrud from './usersCRUD/UsersCRUDComponent';
 import ItemsCrud from './itemsCRUD/ItemsCrudComponent';
 import ProvidersCrud from './providersCRUD/ProvidersCRUDComponent';
 import Microservices from './microservices';
 
 
-import ListOfUsers from './usersCRUD/listOfUsers'
-import { List,Card,CardBody,CardTitle, CardSubtitle, CardText, Button, Accordion, AccordionBody, AccordionItem, AccordionHeader} from 'reactstrap'
+
+import {Card,CardBody } from 'reactstrap'
 import { Collapse,CardHeader} from 'reactstrap';
 
 
 import './Admin.css'
 
-const BASE_URL = "https://first-try-heroku-deployment.herokuapp.com/api"
+
 
 function Admin() {
     

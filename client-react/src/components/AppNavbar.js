@@ -36,15 +36,15 @@ class AppNavbar extends Component {
                         <strong>{user ? `Welcome ${user.name}` : ''}</strong>
                     </span>
                     {user ? <Link to={"/orders/" +user._id} className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 lg:mx-4 lg:my-0">
-                        <a>
+                        <a href="#">
                             Orders
                         </a>
-                    </Link> : <h1></h1>}
+                    </Link> : <h1>Enjoy!</h1>}
 
 
                     <a className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 lg:mx-4 lg:my-0" href="#"> <Logout /></a>
                     {localStorage.getItem('is_admin') === 'true' ? <a className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 lg:mx-4 lg:my-0" href="/admin"> Admin</a> : <a className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 lg:mx-4 lg:my-0" ref="#">Enjoy!</a>}
-                    <a><Profile /></a>
+                    <a href="#"><Profile /></a>
                 </div>
 
             </Fragment>

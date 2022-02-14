@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/CREpitech/full-energy-heroku-front/issues"
   },
-  "homepage": "https://full-energy-heroku-front.herokuapp.com/",
+  "homepage": "./client-react/build/index.html",
   "dependencies": {
     "express": "^4.17.2"
   }

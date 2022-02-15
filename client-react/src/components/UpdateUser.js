@@ -85,7 +85,7 @@ onUpdate = async (id ,user) => {
           name: this.state.name,
           email : this.state.email,
         }
-        this.onUpdate(this.props.user._id,user1)
+        this.onUpdate(this.props.user.id,user1)
        
       }
 

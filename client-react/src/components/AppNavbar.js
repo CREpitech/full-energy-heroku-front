@@ -35,7 +35,7 @@ class AppNavbar extends Component {
                     <span className="navbar-text mr-3">
                         <strong>{user ? `Welcome ${user.name}` : ''}</strong>
                     </span>
-                    {user ? <Link to={"/orders/" +user._id} className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 lg:mx-4 lg:my-0">
+                    {user ? <Link to={"/orders/" +user.id} className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 lg:mx-4 lg:my-0">
                         <a href="#">
                             Orders
                         </a>

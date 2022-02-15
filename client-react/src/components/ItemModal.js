@@ -86,7 +86,7 @@ class ItemModal extends Component {
                                         <Button
                                             color="success"
                                             size="sm"
-                                            onClick={this.onAddToCart.bind(this, user._id, item._id)}
+                                            onClick={this.onAddToCart.bind(this, user.id, item._id)}
                                         >Add To Cart</Button> :
                                         null}
                                 </div>

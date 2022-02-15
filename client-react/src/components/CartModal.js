@@ -56,7 +56,7 @@ class CartModal extends Component {
 
         const user = this.props.user;
         if (this.props.isAuthenticated && !this.props.cart.loading && !this.state.loaded) {
-            this.getCartItems(user._id);
+            this.getCartItems(user.id);
         }
         return (
             <div className="container">
@@ -113,16 +113,16 @@ class CartModal extends Component {
                                                                     <div class="flex flex-col justify-between ml-4 flex-grow">
                                                                         <span class="font-bold text-sm">{item.title}</span>
                                                                         <span class="text-red-500 text-xs">{item.category_name}</span>
-                                                                        <a href="#" class="font-semibold hover:text-red-500 text-gray-500 text-xs" onClick={this.onDeleteFromCart.bind(this, user._id, item._id)}>Remove</a>
+                                                                        <a href="#" class="font-semibold hover:text-red-500 text-gray-500 text-xs" onClick={this.onDeleteFromCart.bind(this, user.id, item._id)}>Remove</a>
                                                                     </div>
                                                                 </div>
                                                                 <div class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">
                                                                     <CardText style={{...qtyBox}}>
-                                                                    <p style={{...qtyBtn, border:"1px solid red", color: "Red"}} onClick={() => {if (item.quantity>1){this.onUpdateQuantity(user._id, item.item_id, item.quantity - 1)} }}>
+                                                                    <p style={{...qtyBtn, border:"1px solid red", color: "Red"}} onClick={() => {if (item.quantity>1){this.onUpdateQuantity(user.id, item.item_id, item.quantity - 1)} }}>
                                                                                              -1
                                                                                            </p>
                                                                         {item.quantity}
-                                                                        <p style={{...qtyBtn, border:"1px solid green", color: "green"}} onClick={() => this.onUpdateQuantity(user._id, item.item_id, item.quantity + 1)}>
+                                                                        <p style={{...qtyBtn, border:"1px solid green", color: "green"}} onClick={() => this.onUpdateQuantity(user.id, item.item_id, item.quantity + 1)}>
                                                                                         +1
                                                                                     </p>
                                                                         </CardText>

@@ -8,12 +8,12 @@ const BASE_URL = "https://first-try-heroku-deployment.herokuapp.com/api"
 const token = localStorage.getItem('token');
 
 function Orders(props) {
-    const id = props.match.params.id;
+    
     const [ordersArray, setOrdersArray] = useState([]);
     const [itemsArray, setItemsArray] = useState([]);
 
     async function get_user_orders() {
-
+	const id = props.match.params.id;
         await axios.get(BASE_URL + `/order/${id}`)
             .then(res => {
 

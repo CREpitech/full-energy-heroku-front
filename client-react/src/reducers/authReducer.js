@@ -42,6 +42,8 @@ export default function  (state=initialState, action){
         case REGISTER_SUCCESS:
             localStorage.setItem('token',action.payload.token);
             localStorage.setItem('is_admin', action.payload.user.is_admin)
+            localStorage.setItem('id', action.payload.user.id)
+            localStorage.setItem('_id', action.payload.user._id)
             return{
                 ...state,
                 ...action.payload,
